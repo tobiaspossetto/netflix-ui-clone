@@ -1,0 +1,33 @@
+.footer{
+    
+    background: rgb(24, 24, 24);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 5;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .desactive{
+    color:rgb(107, 107, 107);
+    font-weight: 400;
+    font-size:13px;
+}
+ .active{
+    color: white;
+    font-weight: 400;
+    font-size:13px;
+}

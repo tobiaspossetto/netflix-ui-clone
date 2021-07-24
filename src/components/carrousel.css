@@ -1,0 +1,71 @@
+
+/*Contenedor principa y flechas*/
+
+.peliculas-recomendadas{
+    
+    padding-left: 10px;
+}
+
+.peliculas-recomendadas .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/*titulo y controles*/
+.contenedor-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.contenedor-titulo-controles h3{
+    color: white;
+    font-size: 22px;
+    
+    font-weight: 500;
+    
+}
+
+
+
+/*Carrousel*/
+
+.peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 5px 0 10px 0px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+}
+
+
+
+.peliculas-recomendadas .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+   scroll-behavior: smooth;
+   border-radius: 7px;
+  
+}
+
+ .carousel::-webkit-scrollbar {
+         width: 0;
+         height: 1;
+     }
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+    min-width: 30%;
+    margin-right: 7px;
+    transition: .7s ease all;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
