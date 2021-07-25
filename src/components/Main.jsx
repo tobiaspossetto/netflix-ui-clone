@@ -15,7 +15,7 @@ const Main = () => {
                     <span>Suspense</span>
                     <span>Thriller</span>
                     <span>Drama</span>
-                    <span>About robberies</span>
+                    
                 </div>
                 <div className='container-control'>
 
@@ -25,7 +25,7 @@ const Main = () => {
                     </div>
                     <div className='btn-reproducir'>
                         <GrIcons.GrPlayFill color='black' size={15}/>
-                        <span>Play </span>
+                        <span>Play now </span>
                     </div>
                     <div className='btn-main'>
                         <AiIcons.AiOutlineInfoCircle color='white' size={20}/>

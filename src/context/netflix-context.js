@@ -16,16 +16,23 @@ export  function NetflixProvider(props) {
     const [war, setWar] = useState([]);
     const [horror, setHorror] = useState([]);
 
-    const llamadas =  () => {
-         actionCall()
-         adventureCall()
-         comedyCall()
-         crimeCall()
-         fictionCall()
-         warCall()
-         horrorCall()
-        console.log(action)
-        console.log(war)
+
+    const [montado, setMontado] = useState(false);
+   
+
+    const llamadas =  async () => {
+        await actionCall()
+        await adventureCall()
+        await comedyCall()
+        await crimeCall()
+        await fictionCall()
+        await warCall()
+        await horrorCall()
+        setTimeout(() => {
+            setMontado(true)
+            console.log("montado")
+        }, 3000);
+        
     }
 
  
@@ -83,17 +90,33 @@ export  function NetflixProvider(props) {
 
 
 
+     //detail 
+     const [detailActive, setDetailActive] = useState('detail detail-hidden');
+     const [movieDetail, setMovieDetail] = useState([])
+
+     const btnDetail = (movie) => {
+            if(montado === true){
+                setDetailActive('detail')
+                console.log('activado')
+                setMovieDetail(movie)
+                console.log(movie)
+            }
+          
+        
+     }
+
+     const btnCloseDetail = () => {
+        setDetailActive('detail detail-hidden')
+        setMovieDetail([])
+     }
 
 
 
 
 
 
-
-    //useMemo optimiza, guarda una referencia al objeto y retorna ese objeto sin volverlo a crear 
-    //a menos que la referencia cambie. Ayuda a que react no refresque al vicio 
-    const value = React.useMemo(() => {
-        return ({
+    //forma mas simple de pasarle los children
+    return <NetflixContext.Provider value={{
             action,
             adventure,
             comedy,
@@ -101,19 +124,13 @@ export  function NetflixProvider(props) {
             fiction,
             war,
             horror,
-            llamadas
-            
-        })
-    },[ action,
-        adventure,
-        comedy,
-        crime,
-        fiction,
-        war,
-        horror])
-
-    //forma mas simple de pasarle los children
-    return <NetflixContext.Provider value={value} {...props} />
+            llamadas,
+            detailActive,
+            movieDetail,
+            btnDetail,
+            montado,
+            btnCloseDetail
+    }} {...props} />
 }
 
 

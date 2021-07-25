@@ -50,6 +50,13 @@
   
 }
 
+.peliculas-recomendadas .contenedor-carousel .carousel button{
+  background:rgba(255, 255, 255, 0);
+  border: none;
+  outline:none;
+  
+}
+
  .carousel::-webkit-scrollbar {
          width: 0;
          height: 1;

@@ -2,6 +2,7 @@
 import React from 'react'
 import * as AiIcons from 'react-icons/ai'
 import * as RiIcons from 'react-icons/ri'
+import * as HiIcons from 'react-icons/hi'
 
 require('./footer.css')
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
                 <span className='desactive'>Coming soon</span>
             </div>
             <div className='item'>
-            <RiIcons.RiDownload2Fill color='rgb(107, 107, 107)' size={20}/>
+            <HiIcons.HiDownload color='rgb(107, 107, 107)' size={20}/>
                 <span className='desactive'>Downloads</span>
             </div>
         </div>

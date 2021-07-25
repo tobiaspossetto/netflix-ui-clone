@@ -1,0 +1,120 @@
+.detail{
+    width: 100%;
+    
+    background: rgb(39, 39, 39);
+    z-index: 40;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    border-radius: 17px 17px 0 0;
+    transition: 850ms;
+}
+.detail-hidden{
+    transition: 500ms;
+    width: 100%;
+    left: 0;
+    bottom: -1000px;
+}
+
+.detail .detail-info{
+    width: 100%;
+    display: flex;
+    
+    
+}
+
+.detail .detail-info div{
+    width: 140px;
+  
+    
+}
+
+.detail .detail-info img{
+    width: 100%;
+    padding-top: 5px;
+}
+
+.detail .detail-info .information{
+    width: 100%;
+    
+    padding: 0px 10px 10px 10px;
+}
+
+.detail .detail-info .information .title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.detail .detail-info .information button{
+    outline: none;
+    border:none;
+    background: rgba(240, 248, 255, 0);
+}
+
+.detail .detail-info .information .title h2{
+    color: white;
+    font-weight: 500;
+}
+
+.detail .detail-info .information .resume {
+    width: 100%;
+
+    padding: 5px 10px 5px 5px;
+}
+
+.detail .detail-info .information .resume p{
+    color: white;
+    font-size:13px;
+    font-weight: 400;
+}
+
+.control{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.btn-reproducir{
+   padding: 10px;
+  
+   width:180px;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   margin-right: 60px;
+   
+}
+.btn-descargar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-left: 30px;
+}
+.btn-descargar  span{
+    color: white;
+    font-weight: 300;
+   
+}
+
+.more{
+    border-top: 1px solid #353535;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between
+}
+
+.more .morebtn{
+    display: flex;
+    align-items: center;
+
+}
+
+.morebtn span{
+    color: white;
+    margin-left: 5px;
+}
