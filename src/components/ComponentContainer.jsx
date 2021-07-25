@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Main from './Main'
 import Nav from './nav/Nav'
 import { useNetflix } from '../context/netflix-context'
+require('../index.css')
 const ComponentContainer = () => {
     const { action, adventure, comedy, crime, fiction, war, horror, llamadas } = useNetflix()
 
@@ -23,18 +24,19 @@ const ComponentContainer = () => {
 
     
     return (
-        <div>
+        <div className='container-components'>
              <Nav />
-        <Main />
+            <Main />
 
-        <Carrousel pelis={action} />
-        <Carrousel pelis={adventure} />
-        <Carrousel pelis={comedy} />
-        <Carrousel pelis={crime} />
-        <Carrousel pelis={fiction} />
-        <Carrousel pelis={war} />
-        <Carrousel pelis={horror} />
-        <Footer />
+            <Carrousel pelis={action} des='Most popular on Netflix
+    '/>
+            <Carrousel pelis={adventure} des='Action and adventure' />
+            <Carrousel pelis={comedy} des='Children and family'/>
+            <Carrousel pelis={crime} des='About crime'/>
+            <Carrousel pelis={fiction} des='Fiction'/>
+            <Carrousel pelis={war} des='Warlike'/>
+            <Carrousel pelis={horror} des='Horror movies'/>
+            <Footer />
 
         </div>
     )

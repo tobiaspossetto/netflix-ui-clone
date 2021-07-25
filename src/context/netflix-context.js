@@ -31,13 +31,15 @@ export  function NetflixProvider(props) {
  
     //asd
     const actionCall = async () => {
-        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=28`)
+        //let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=28&page=2`)
+       // let data = await axios.get(`https://api.themoviedb.org/3/search/tv?query=lok&api_key=f40a30d7101c8b410464aa69843e25df`)
+        let data = await axios.get(`https://api.themoviedb.org/3/search/multi?query=war&api_key=f40a30d7101c8b410464aa69843e25df`)
         data = await data.data.results
        setAction(data)
         
     }
     const adventureCall = async () => {
-        let data = await axios.get(`https://api.themoviedb.org/4/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=12`)
+        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=12&page=2`)
         data = await data.data.results
        setAdventure(data)
         
@@ -50,13 +52,13 @@ export  function NetflixProvider(props) {
         
     }
     const crimeCall = async () => {
-        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=80`)
+        let data = await axios.get(`https://api.themoviedb.org/3/search/multi?query=murd&api_key=f40a30d7101c8b410464aa69843e25df&page=2`)
         data = await data.data.results
        setCrime(data)
         
     }
     const fictionCall = async () => {
-        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=878`)
+        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=878&page=2`)
         data = await data.data.results
        setFiction(data)
         
@@ -69,7 +71,7 @@ export  function NetflixProvider(props) {
     }
 
     const horrorCall = async () => {
-        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=27`)
+        let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=27&page=1`)
         data = await data.data.results
        setHorror(data)
         

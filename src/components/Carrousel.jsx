@@ -9,7 +9,7 @@ const Carrousel = (props) => {
     return (
         <div className="peliculas-recomendadas contenedor">
             <div className="contenedor-titulo-controles">
-                <h3>Populares en Netflix</h3>
+                <h3>{props.des}</h3>
                 <div className="indicadores"></div>
             </div>
 

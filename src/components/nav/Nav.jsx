@@ -63,9 +63,9 @@ const Nav = () => {
             </div>
            
             <div className={'header-nav ' + classNav}>
-                <span>Series</span>
-                <span>Peliculas</span>
-                <span>Mi lista</span>
+                <span>T.V. serie</span>
+                <span>Movie</span>
+                <span>My list</span>
             </div>
         </div>
     )

@@ -9,15 +9,15 @@ const Footer = () => {
         <div className='footer'>
             <div className='item'>
                 <AiIcons.AiFillHome color='white' size={20}/>
-                <span className='active'>Inicio</span>
+                <span className='active'>Home</span>
             </div>
             <div className='item'>
                 <RiIcons.RiMovieFill color='rgb(107, 107, 107)' size={20}/>
-                <span className='desactive'>Próximamente</span>
+                <span className='desactive'>Coming soon</span>
             </div>
             <div className='item'>
             <RiIcons.RiDownload2Fill color='rgb(107, 107, 107)' size={20}/>
-                <span className='desactive'>Descargas</span>
+                <span className='desactive'>Downloads</span>
             </div>
         </div>
     )

@@ -11,25 +11,25 @@ const Main = () => {
             <div className='main-control'>
                
                 <div className='description'>
-                    <span>Acción</span>
-                    <span>Suspenso</span>
+                    <span>Action</span>
+                    <span>Suspense</span>
                     <span>Thriller</span>
                     <span>Drama</span>
-                    <span>Sobre robos</span>
+                    <span>About robberies</span>
                 </div>
                 <div className='container-control'>
 
                     <div className='btn-main'>
                         <IoIcons.IoMdAdd color='white' size={20}/>
-                        <span>Mi lista</span>
+                        <span>My list</span>
                     </div>
                     <div className='btn-reproducir'>
                         <GrIcons.GrPlayFill color='black' size={15}/>
-                        <span>Reproducir </span>
+                        <span>Play </span>
                     </div>
                     <div className='btn-main'>
                         <AiIcons.AiOutlineInfoCircle color='white' size={20}/>
-                        <span>Información</span>
+                        <span>Information</span>
                     </div>
                 </div>
               
