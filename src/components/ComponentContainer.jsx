@@ -1,10 +1,10 @@
 import React, {useRef, useEffect} from 'react'
-import Carrousel from './Carrousel'
-import Footer from './Footer'
-import Main from './Main'
+import Carrousel from './carousel/Carousel'
+import Footer from './navFooter/Footer'
+import Main from './main/Main'
 import Nav from './nav/Nav'
 import { useNetflix } from '../context/netflix-context'
-import Detail from './Detail'
+import Detail from './detail/Detail'
 require('../index.css')
 const ComponentContainer = () => {
     const { action, adventure, comedy, crime, fiction, war, horror, llamadas } = useNetflix()

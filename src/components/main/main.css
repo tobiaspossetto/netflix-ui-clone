@@ -1,17 +1,20 @@
 .main{
-    background-image: url('https://i.pinimg.com/564x/4b/16/85/4b1685c3d44728868675cb65bbf35a29.jpg');
+    background-image: url('https://aws.glamour.mx/prod/designs/v1/assets/620x869/228659.jpg');
     height:500px;
     width: 100%;
     
+    
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center top;
+    background-position: bottom ;
     display: flex;
     flex-direction:column;
     align-items: flex-end;
     justify-content: flex-end;
     margin-bottom: 20px;
 }
+
+
 .main-control{
     color: #fff;
     background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8435749299719888) 61%, rgba(0,0,0,0.6054796918767507) 86%, rgba(0,0,0,0) 100%);

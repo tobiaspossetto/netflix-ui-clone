@@ -8,13 +8,14 @@ require('./main.css')
 const Main = () => {
     return (
         <div className='main'>
+          
             <div className='main-control'>
                
                 <div className='description'>
                     <span>Action</span>
                     <span>Suspense</span>
-                    <span>Thriller</span>
-                    <span>Drama</span>
+                    <span>Mystery</span>
+                    
                     
                 </div>
                 <div className='container-control'>

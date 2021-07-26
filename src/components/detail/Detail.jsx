@@ -3,7 +3,7 @@ import *  as AiIcons  from 'react-icons/ai'
 import * as GrIcons from 'react-icons/gr'
 import * as HiIcons from 'react-icons/hi'
 import * as MdIcons from 'react-icons/md'
-import { useNetflix } from '../context/netflix-context'
+import { useNetflix } from '../../context/netflix-context'
 
 require('./detail.css')
 const Detail = () => {
@@ -17,7 +17,7 @@ const Detail = () => {
 
                     <div className="title">
                         <h2>{movieDetail.title}</h2>
-                        <button onClick={btnCloseDetail} className='closeBTN'><AiIcons.AiFillCloseCircle color='#d2d2d2' size={35}/></button>
+                        <button onClick={btnCloseDetail} className='closeBTN'><AiIcons.AiFillCloseCircle color='white' size={35}/></button>
                     </div>
                     <div className="resume">
                         <p>{movieDetail.overview}</p>

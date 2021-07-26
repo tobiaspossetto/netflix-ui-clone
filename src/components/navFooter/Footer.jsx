@@ -1,7 +1,7 @@
 
 import React from 'react'
 import * as AiIcons from 'react-icons/ai'
-import * as RiIcons from 'react-icons/ri'
+import * as BsIcons from 'react-icons/bs'
 import * as HiIcons from 'react-icons/hi'
 
 require('./footer.css')
@@ -13,7 +13,7 @@ const Footer = () => {
                 <span className='active'>Home</span>
             </div>
             <div className='item'>
-                <RiIcons.RiMovieFill color='rgb(107, 107, 107)' size={20}/>
+                <BsIcons.BsCollectionPlayFill className='iconComing' color='rgb(107, 107, 107)' size={20}/>
                 <span className='desactive'>Coming soon</span>
             </div>
             <div className='item'>

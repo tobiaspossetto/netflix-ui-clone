@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { useNetflix } from '../context/netflix-context'
-require('./carrousel.css')
-const Carrousel = (props) => {
+import { useNetflix } from '../../context/netflix-context'
+require('./carousel.css')
+const Carousel = (props) => {
     const [pelis, setPelis] = useState([])
     
     const { btnDetail,montado } = useNetflix()
@@ -59,4 +59,4 @@ const Carrousel = (props) => {
     )
 }
 
-export default Carrousel
+export default Carousel

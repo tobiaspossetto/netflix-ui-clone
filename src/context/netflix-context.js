@@ -38,8 +38,7 @@ export  function NetflixProvider(props) {
  
     //asd
     const actionCall = async () => {
-        //let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=f40a30d7101c8b410464aa69843e25df&with_genres=28&page=2`)
-       // let data = await axios.get(`https://api.themoviedb.org/3/search/tv?query=lok&api_key=f40a30d7101c8b410464aa69843e25df`)
+      
         let data = await axios.get(`https://api.themoviedb.org/3/search/multi?query=war&api_key=f40a30d7101c8b410464aa69843e25df`)
         data = await data.data.results
        setAction(data)

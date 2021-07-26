@@ -20,21 +20,3 @@ function App() {
 
 export default App;
 
-
-/* {
-          pelis.map((i) => {
-            return (
-              <>
-                   <p key={i.id}>{i.title}</p>
-                  <span ><img src={'https://image.tmdb.org/t/p/original'+i.poster_path}></img></span>
-              </>
-             
-            )
-          }
-           
-            
-         )
-
-           
-          
-        } */
